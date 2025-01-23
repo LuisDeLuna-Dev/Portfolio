@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: Archivo, sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: rgb(17, 17, 17);
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0px;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input {
+  display: block;
+  font-size: 1rem;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: darkgray;
+}
+
+.container {
+  max-width: 62rem;
+  padding: 0 1rem;
+  margin:  0 auto;
+}
+.mainContainer{
+  margin-top: 4rem;
+  max-width: 63rem;
+  height: 100vh;
+}
+
+.animeLeft {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: animeLeft 0.3s forwards;
+}
+
+@keyframes animeLeft {
+  to {
+    opacity: 1;
+    transform: initial;
+  }
+}

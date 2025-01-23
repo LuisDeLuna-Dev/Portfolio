@@ -1,0 +1,85 @@
+.headerContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: rgb(17, 17, 17);
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    height: 2.5rem;
+    margin-top: 2rem;
+}
+
+ul {
+    display: flex;
+    gap: 1.5rem;
+    padding-right: 1.9rem;
+}
+
+.logo {
+    width: 11rem;
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.mobileMenuIcon {
+    display: none;
+}
+
+.mobileMenu {
+    opacity: 0;
+    transition: opacity 2s ease, max-height 0.3s ease;
+    max-height: 0;
+    overflow: hidden;
+    border-bottom: 3px solid #222222;
+}
+
+.mobileMenu ul {
+    margin-top: 2rem;
+    gap: 10px;
+}
+
+@media (max-width:62.5rem) {
+    .header {
+        width: 70%;
+        margin-top: 1rem;
+        align-items: center;
+    }
+
+    .navContainer ul {
+        display: none;
+    }
+
+    .mobileMenuIcon {
+        display: block;
+        background-color: transparent;
+        border: none;
+        padding-top: 0.5rem;
+        cursor: pointer;
+    }
+
+    .mobileMenu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+        font-size: 20px;
+    }
+
+    .open {
+        display: block;
+        opacity: 1;
+        max-height: 300px;
+        z-index: 999;
+    }
+
+}
