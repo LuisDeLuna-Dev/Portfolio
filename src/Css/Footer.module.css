@@ -1,0 +1,37 @@
+.FooterContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    height: 5rem;
+}
+
+p {
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.byLogo {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+span {
+    color: #8235FF;
+}
+
+@media (max-width:730px) {
+    .FooterContainer {
+        display: block;
+        justify-items: center;
+        padding-top: 1rem;
+    }
+}
+
+@media (max-width:400px) {
+    p {
+        font-size: .8rem;
+    }
+}

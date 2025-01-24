@@ -44,11 +44,15 @@ a {
 }
 
 .container {
-  max-width: 62rem;
+  max-width: 70rem;
   padding: 0 1rem;
-  margin:  0 auto;
+  margin: 0 auto;
 }
-.mainContainer{
+.bgAlt{
+  background-color: #151515 ;
+  width: 100%;
+}
+.mainContainer {
   margin-top: 4rem;
   max-width: 63rem;
   height: 100vh;
