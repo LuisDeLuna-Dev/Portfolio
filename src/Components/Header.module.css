@@ -26,6 +26,25 @@ ul {
 .logo {
     width: 11rem;
 }
+nav a{
+    position: relative;
+}
+nav a::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: -6px;
+    left: 0;
+    background: linear-gradient(270deg, #986dff 0%, #17161d 100%);
+    transform-origin: bottom right;
+    transition: transform .5s cubic-bezier(0.86, 0, 0.07, 1)
+}
+nav a:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left
+}
 
 a:hover {
     color: rgb(255, 255, 255);
@@ -47,6 +66,7 @@ a:hover {
     margin-top: 2rem;
     gap: 10px;
 }
+
 
 @media (max-width:62.5rem) {
     .header {
@@ -81,5 +101,4 @@ a:hover {
         max-height: 300px;
         z-index: 999;
     }
-
 }
