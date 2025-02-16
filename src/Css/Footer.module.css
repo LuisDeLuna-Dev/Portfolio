@@ -4,6 +4,7 @@
     align-items: center;
     margin: auto;
     height: 5rem;
+    width: 90%;
 }
 
 p {
@@ -22,16 +23,11 @@ span {
     color: #8235FF;
 }
 
-@media (max-width:730px) {
+@media (max-width:760px) {
     .FooterContainer {
-        display: block;
-        justify-items: center;
-        padding-top: 1rem;
+        justify-content: center;
     }
-}
-
-@media (max-width:400px) {
-    p {
-        font-size: .8rem;
+    .byLogo{
+        display: none;
     }
 }
