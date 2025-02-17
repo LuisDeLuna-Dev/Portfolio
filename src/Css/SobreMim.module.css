@@ -65,6 +65,9 @@
     }
 }
 @media (max-width: 600px){ 
+    .sobremimContainer{
+        margin-top: 4rem;
+    }
     .sobremimContainer img{
         height: 20em;
         width: auto;

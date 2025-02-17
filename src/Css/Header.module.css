@@ -27,10 +27,12 @@ ul {
 .logo {
     width: 11rem;
 }
-nav a{
+
+nav a {
     position: relative;
 }
-nav a::after{
+
+nav a::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -42,7 +44,8 @@ nav a::after{
     transform-origin: bottom right;
     transition: transform .5s cubic-bezier(0.86, 0, 0.07, 1)
 }
-nav a:hover::after{
+
+nav a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left
 }
@@ -101,5 +104,11 @@ a:hover {
         opacity: 1;
         max-height: 300px;
         z-index: 999;
+    }
+}
+
+@media (max-width:37.5rem) {
+    .header {
+        width: 90%;
     }
 }
