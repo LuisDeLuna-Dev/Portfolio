@@ -10,9 +10,9 @@ const Footer = () => {
           Copyright © 2024 <span>LuisLuna-Dev.</span> Todos os direitos
           reservados.
         </p>
-        <div className={`${styles.byLogo}`}>
+        <div className={styles.byLogo}>
           <p>Powered By</p>
-          <Logo className={`${styles.Logo}`}/>
+          <Logo className={styles.Logo}/>
         </div>
       </div>
     </div>

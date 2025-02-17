@@ -61,7 +61,7 @@
 @media(max-width:600px){
     .apresent{
         flex-direction: column;
-        margin: 16rem auto 6rem auto;
+        margin: 13rem auto 6rem auto;
         width: 70%;
     }
     .apresentText{
