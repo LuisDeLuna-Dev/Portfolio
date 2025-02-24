@@ -76,6 +76,9 @@
   .card p {
     font-size: 15px;
   }
+  .card img {
+    display: none;
+  }
 }
 
 @media (min-width: 438px) {
