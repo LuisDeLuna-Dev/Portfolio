@@ -70,3 +70,8 @@ a {
     transform: initial;
   }
 }
+@media (max-width: 520px) {
+  .container {
+    width: 90%;
+  }
+}

@@ -1,102 +1,126 @@
 .sobremimContainer {
-    grid-column: 2/6;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    margin: 5rem auto;
-    width: 90%;
-    max-width: 70rem;
-    background-color: #171717;
-    border-radius: 0.4375rem;
-    border: 0.125rem solid #1f1f1f;
+  grid-column: 2/6;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  margin: 5rem auto;
+  width: 90%;
+  max-width: 70rem;
+  background-color: #171717;
+  border-radius: 0.4375rem;
+  border: 0.125rem solid #1f1f1f;
 }
 
 .perfil {
-    height: 30em;
-    margin: 1.5625rem;
-    background: no-repeat;
-    background-position: center;
-    background-size: cover;
+  height: 30em;
+  margin: 1.5625rem;
+  background: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .descricao {
-    margin: 1.5625rem;
+  margin: 1.5625rem;
 }
 
 .quemSou {
-    color: #8235FF;
-    font-family: Archivo;
-    font-size: 1.75rem;
-    margin-bottom: 0.5rem;
-    font-weight: 500;
-
+  color: #8235ff;
+  font-family: Archivo;
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
 }
 
 .meuNome {
-    color: #FFFFFF;
-    font-family: Archivo;
-    font-weight: 500;
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
+  color: #ffffff;
+  font-family: Archivo;
+  font-weight: 500;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
 }
 
 .frontEnd {
-    color: #FFFFFF;
-    font-weight: 300;
-    font-size: 20px;
-    margin-bottom: 0.9375rem;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 20px;
+  margin-bottom: 0.9375rem;
 }
 
 .sobremimContainer p {
-    color: #949494;
-    font-size: 1.25rem;
-    text-align: left;
-    overflow: hidden;
-    max-width: 50ch;
+  color: #949494;
+  font-size: 1.25rem;
+  text-align: left;
+  overflow: hidden;
+  max-width: 50ch;
 }
 
 @media (max-width: 1000px) {
-    .sobremimContainer {
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        max-width: 70%;
-    }
+  .sobremimContainer {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    max-width: 70%;
+  }
 
-    .sobremimContainer p {
-        max-width: 50ch;
-    }
+  .sobremimContainer p {
+    max-width: 50ch;
+  }
 
-    .sobremimContainer img {
-        margin-top: 1rem;
-        height: auto;
-        width: 25rem;
-    }
+  .sobremimContainer img {
+    margin-top: 1rem;
+    height: auto;
+    width: 25rem;
+  }
 }
 
 @media (max-width: 600px) {
-    .sobremimContainer {
-        margin-top: 9rem;
-    }
+  .sobremimContainer {
+    margin-top: 9rem;
+  }
 
-    .sobremimContainer img {
-        height: 20em;
-        width: auto;
-    }
+  .sobremimContainer img {
+    height: 20em;
+    width: auto;
+  }
 
-    .quemSou {
-        font-size: 1rem;
-    }
+  .quemSou {
+    font-size: 1rem;
+  }
 
-    .meuNome {
-        font-size: 1.5rem;
-    }
+  .meuNome {
+    font-size: 1.5rem;
+  }
 
-    .frontEnd {
-        font-size: 1rem;
-    }
+  .frontEnd {
+    font-size: 1rem;
+  }
 
-    .sobremimContainer p {
-        font-size: 0.8rem;
-    }
+  .sobremimContainer p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .sobremimContainer {
+    margin-top: 9rem;
+  }
+
+  .sobremimContainer img {
+    height: 15em;
+    width: auto;
+  }
+  .quemSou {
+    font-size: 1rem;
+  }
+  .meuNome {
+    font-size: 1.5rem;
+  }
+  
+  .frontEnd {
+    font-size: 1rem;
+  }
+
+  .sobremimContainer p {
+    font-size: 0.8rem;
+  }
 }

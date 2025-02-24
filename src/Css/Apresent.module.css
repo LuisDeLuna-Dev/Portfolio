@@ -77,7 +77,7 @@
     .apresent {
         flex-direction: column;
         margin: 13rem auto 6rem auto;
-        width: 70%;
+        width: 100%;
     }
 
     .apresentText {
