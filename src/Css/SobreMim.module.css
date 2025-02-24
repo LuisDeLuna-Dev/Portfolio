@@ -1,87 +1,102 @@
-.sobremimContainer{
+.sobremimContainer {
     grid-column: 2/6;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    margin: 2rem auto; 
+    margin: 5rem auto;
     width: 90%;
     max-width: 70rem;
     background-color: #171717;
-    border-radius: 0.4375rem; 
-    border: 0.125rem solid #1f1f1f; 
+    border-radius: 0.4375rem;
+    border: 0.125rem solid #1f1f1f;
 }
 
-.perfil{
+.perfil {
     height: 30em;
-    margin: 1.5625rem; 
+    margin: 1.5625rem;
     background: no-repeat;
     background-position: center;
-    background-size: cover; 
+    background-size: cover;
 }
 
-.descricao{
-    margin: 1.5625rem; 
+.descricao {
+    margin: 1.5625rem;
 }
 
-.quemSou{
+.quemSou {
     color: #8235FF;
     font-family: Archivo;
-    font-size: 1.75rem; 
-    margin-bottom: 0.5rem; 
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+
 }
-.meuNome{
+
+.meuNome {
     color: #FFFFFF;
     font-family: Archivo;
-    font-size: 3rem; 
+    font-weight: 500;
+    font-size: 3rem;
     margin-bottom: 0.5rem;
 }
-.frontEnd{
+
+.frontEnd {
     color: #FFFFFF;
-    font-weight: regular;
-    font-size: 1.5rem; 
-    margin-bottom: 0.9375rem; 
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 0.9375rem;
 }
-.sobremimContainer p{
+
+.sobremimContainer p {
     color: #949494;
-    font-size: 1.25rem; 
+    font-size: 1.25rem;
     text-align: left;
     overflow: hidden;
     max-width: 50ch;
 }
-@media (max-width: 1000px){  
-    .sobremimContainer{
+
+@media (max-width: 1000px) {
+    .sobremimContainer {
         display: flex;
         flex-direction: column;
         height: auto;
         max-width: 70%;
     }
-    .sobremimContainer p{
+
+    .sobremimContainer p {
         max-width: 50ch;
     }
-    .sobremimContainer img{
+
+    .sobremimContainer img {
         margin-top: 1rem;
         height: auto;
-        width: 25rem; 
+        width: 25rem;
     }
 }
-@media (max-width: 600px){ 
-    .sobremimContainer{
+
+@media (max-width: 600px) {
+    .sobremimContainer {
         margin-top: 9rem;
     }
-    .sobremimContainer img{
+
+    .sobremimContainer img {
         height: 20em;
         width: auto;
     }
-    .quemSou{
+
+    .quemSou {
         font-size: 1rem;
     }
-    .meuNome{
+
+    .meuNome {
         font-size: 1.5rem;
     }
-    .frontEnd{
+
+    .frontEnd {
         font-size: 1rem;
     }
-    .sobremimContainer p{
+
+    .sobremimContainer p {
         font-size: 0.8rem;
     }
 }

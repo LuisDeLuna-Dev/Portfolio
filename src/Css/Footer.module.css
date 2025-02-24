@@ -27,7 +27,8 @@ span {
     .FooterContainer {
         justify-content: center;
     }
-    .byLogo{
+
+    .byLogo {
         display: none;
     }
 }

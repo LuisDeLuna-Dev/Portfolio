@@ -12,7 +12,7 @@ const Footer = () => {
         </p>
         <div className={styles.byLogo}>
           <p>Powered By</p>
-          <Logo className={styles.Logo}/>
+          <Logo className={styles.Logo} />
         </div>
       </div>
     </div>

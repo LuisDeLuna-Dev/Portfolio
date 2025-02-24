@@ -1,0 +1,92 @@
+.card {
+  background-color: rgb(17, 17, 17);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 47px 10px;
+  position: relative;
+  height: 10rem;
+  border: 0.125rem solid #1f1f1f;
+  transition: height 0.5s ease-in-out;
+}
+
+.cardWithImage {
+  transition: height 0.5s ease-in-out;
+}
+
+.card a {
+  color: #8235FF;
+}
+
+.card img {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  width: 80%;
+  height: 10rem;
+  left: 50%;
+  top: -50%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: opacity 0.5s ease-in-out, top 0.5s ease-in-out;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.card:hover img {
+  opacity: 1;
+  visibility: visible;
+  top: -0.4rem;
+}
+
+.card h2 {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  position: absolute;
+  bottom: 6.3rem;
+}
+
+.card p {
+  width: 80%;
+  position: absolute;
+  color: darkgray;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 10px;
+  bottom: 2rem;
+}
+
+.link {
+  position: absolute;
+  bottom: 1rem;
+}
+
+@media (max-width: 438px) {
+  .card {
+    margin: 20px 10px;
+    height: auto;
+  }
+
+  .card h2 {
+    font-size: 20px;
+    bottom: 7rem;
+  }
+
+  .card p {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 438px) {
+  .cardWithImage:hover {
+    height: 14rem;
+  }
+
+  .cardWithImage:hover img {
+    opacity: 1;
+    visibility: visible;
+    top: -0.4rem;
+  }
+}

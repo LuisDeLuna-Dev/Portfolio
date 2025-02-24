@@ -5,6 +5,7 @@ import Header from "./Components/Header.jsx";
 import Apresent from "./Components/Apresent.jsx";
 import Footer from "./Components/Footer.jsx";
 import SobreMim from "./Components/SobreMim.jsx";
+import Projetos from "./Components/Projetos.jsx";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Header />
         <Apresent />
         <SobreMim />
+        <Projetos />
         <Footer />  
       </BrowserRouter>
     </div>

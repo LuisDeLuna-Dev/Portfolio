@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "../Css/Header.module.css";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import Logo from "../Assets/logo.svg?react";
 import IconMenu from "../Assets/iconMenu.svg?react";
+import { Link as ScrollLink } from "react-scroll";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,51 +11,75 @@ const Header = () => {
   function toggleMenu() {
     setMenuOpen(!menuOpen);
   }
-  
+
   return (
     <div className={styles.headerContainer}>
       <header className={`${styles.header} container`}>
         <div>
-          <Link to="/" aria-label="Portfolio - Home">
+          <ScrollLink
+            to="apresent"
+            smooth={true}
+            offset={-999}
+            duration={500}
+            aria-label="Portfolio - Home"
+          >
             <Logo className={styles.logo} />
-          </Link>
+          </ScrollLink>
         </div>
         <nav className={styles.navContainer}>
           <ul>
             <li>
-              <Link className={styles.NavLink} to="#sobreMim">
+              <ScrollLink
+                to="sobreMim"
+                smooth={true}
+                offset={-200}
+                duration={500}
+              >
                 Sobre Mim
-              </Link>
+              </ScrollLink>
             </li>
             <li>
-              <a href="#projetos">Projetos</a>
+              <ScrollLink to="projetos" smooth={true} duration={500}>
+                Projetos
+              </ScrollLink>
             </li>
             <li>
-              <a href="#experiencia">Experiência</a>
+              <ScrollLink to="experiencia" smooth={true} duration={500}>
+                Experiência
+              </ScrollLink>
             </li>
             <li>
-              <a href="#redes-contato">Redes de Contato</a>
+              <ScrollLink to="redes-contato" smooth={true} duration={500}>
+                Redes de Contato
+              </ScrollLink>
             </li>
-          </ul>    
+          </ul>
         </nav>
-        <button className={styles.mobileMenuIcon}
-            onClick={toggleMenu}>
-            <IconMenu />
-          </button>
+        <button className={styles.mobileMenuIcon} onClick={toggleMenu}>
+          <IconMenu />
+        </button>
       </header>
       <div className={`${styles.mobileMenu} ${menuOpen ? styles.open : ""}`}>
         <ul>
           <li>
-            <a href="#sobreMim">Sobre Mim</a>
+            <ScrollLink to="sobreMim" smooth={true} offset={-75} duration={500}>
+              Sobre Mim
+            </ScrollLink>
           </li>
           <li>
-            <a href="#projetos">Projetos</a>
+            <ScrollLink to="projetos" smooth={true} offset={-40} duration={500}>
+              Projetos
+            </ScrollLink>
           </li>
           <li>
-            <a href="#experiencia">Experiencia</a>
+            <ScrollLink to="experiencia" smooth={true} duration={500}>
+              Experiência
+            </ScrollLink>
           </li>
           <li>
-            <a href="#redes-contato">Redes de Contato</a>
+            <ScrollLink to="redes-contato" smooth={true} duration={500}>
+              Redes de Contato
+            </ScrollLink>
           </li>
         </ul>
       </div>

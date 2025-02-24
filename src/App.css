@@ -45,6 +45,7 @@ a {
 
 .container {
   max-width: 70rem;
+  width: 70%;
   margin: 0 auto;
 }
 .bgAlt{
