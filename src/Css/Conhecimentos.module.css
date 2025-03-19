@@ -1,0 +1,50 @@
+.ConhecimentosContainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    height: 30rem;
+}
+.conhecimentos{
+    margin-top: 6rem;
+}
+.conhecimentos h1{
+    font-weight: 400    ;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.conhecimentos p{
+    margin-top: 20px;
+    text-align: left;
+    color: darkgray;
+    overflow: hidden;
+    max-width: 35ch;
+}
+.ConhecimentosCard{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+@media (max-width: 1100px) {
+    .ConhecimentosContainer {
+        grid-template-columns: 1fr;
+        height: 100%;
+        max-width: 100%;
+    }
+    .ConhecimentosCard{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 500px) {
+    .conhecimentos{
+        margin-top: 4rem;
+    }
+    .conhecimentos h1{
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    .conhecimentos p{
+        display: none;
+    }
+}

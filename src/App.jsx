@@ -6,6 +6,8 @@ import Apresent from "./Components/Apresent.jsx";
 import Footer from "./Components/Footer.jsx";
 import SobreMim from "./Components/SobreMim.jsx";
 import Projetos from "./Components/Projetos.jsx";
+import Conhecimentos from "./Components/Conhecimentos.jsx";
+
 
 function App() {
   return (
@@ -15,6 +17,7 @@ function App() {
         <Apresent />
         <SobreMim />
         <Projetos />
+        <Conhecimentos />
         <Footer />  
       </BrowserRouter>
     </div>
