@@ -1,6 +1,10 @@
 import React from "react";
 import style from "../Css/SobreMim.module.css";
-import Perfil from "../Assets/perfil.png";
+import Perfil from "../Assets/Chat.png";
+import Linkedin from "../Assets/logo/linkedin.svg";
+import GitHub from "../Assets/logo/github.svg";
+import Wpp from "../Assets/logo/whatsapp.svg";
+import Email from "../Assets/logo/email.svg";
 import { Element } from "react-scroll";
 
 const SobreMim = () => {
@@ -19,6 +23,12 @@ const SobreMim = () => {
             na Anhanguera e tenho me concentrado em aprender e aplicar conceitos
             de front-end, como performance, animações, e responsividade.
           </p>
+          <div className={style.contatos}>
+            <a  href="https://www.linkedin.com/in/luisdluna/" target="_blank"><img className={style.logoContato} src={Linkedin} alt="" /></a>
+            <a  href="https://github.com/LuisDeLuna-Dev" target="_blank"><img className={style.logoContato} src={GitHub} alt="" /></a>
+            <a  href="https://wa.me/+552187607870" target="_blank"><img className={style.logoContato} src={Wpp} alt="" /></a>
+            <a  href="https://mail.google.com/mail/?view=cm&fs=1&to=lui.fernando1567887@gmail.com&su=Sobre%20Seu%20Portfolio" target="_blank"><img className={style.logoContato} src={Email} alt="" /></a>
+          </div>
         </section>
       </div>
     </Element>

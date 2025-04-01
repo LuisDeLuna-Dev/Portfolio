@@ -11,3 +11,6 @@
 .card h2{
     color : #fff;
 }
+.card:hover{
+    border: 1px solid #8235ff;
+}

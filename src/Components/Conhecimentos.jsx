@@ -10,11 +10,14 @@ import LogoTailwind from "../Assets/logo/tailwindcss.svg?react";
 import LogoGit from "../Assets/logo/git.svg?react";
 import LogoGithub from "../Assets/logo/github.svg?react";
 import Card from './Card/Card.jsx';
+import { Element } from "react-scroll";
+
 
 const Conhecimentos = () => {
   const [descricaoAtual, setDescricaoAtual] = useState("Passe o mouse sobre um card para ver a descrição.");
 
   return (
+    <Element name="conhecimentos">
     <div className={`${styles.ConhecimentosContainer} container`}>
       <div className={styles.conhecimentos}>
         <h1>Conhecimentos<span>.</span></h1>
@@ -68,6 +71,7 @@ const Conhecimentos = () => {
         />
       </div>
     </div>
+    </Element>
   );
 };
 

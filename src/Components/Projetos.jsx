@@ -21,27 +21,32 @@ const Projetos = () => {
             title="BikCraft"
             description="Loja de bicicletas personalizadas feitas a mão, com design e tecnologia."
             image={BikCraft}
+            link="https://www.origamid.com/projetos/bikcraft/"
           />
           <Card
             title="Forest"
             description="Uma empresa de alocação de locais na natureza para eventos e acampamentos."
             image={Forest}
+            link="https://forest.origam.id/"
           />
           <Card
             title="Dogs"
             description="Rede social onde todos podem compartilhar fotos e informações de seus pets."
             image={Dogs}
+            link="https://dogs.origamid.dev/"
           />
           <Card
             title="Animais Fantásticos"
             description="Algumas curiosidades sobre animais. Utilizado consumo de API."
             image={Animais}
+            link="https://www.origamid.com/projetos/animais-fantasticos/"
           />
 
           <Card
             title="Lobo"
             description="Portfólio de um Designer de UI/UX com um design minimalista e elegante."
             image={Lobo}
+            link="https://www.origamid.com/projetos/portfolio/"
           />
           <Card
             title="Em Andamento.."

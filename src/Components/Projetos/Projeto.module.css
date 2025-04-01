@@ -12,6 +12,9 @@
 .cardWithImage {
   transition: height 0.5s ease-in-out;
 }
+.cardNoImage a{
+  display: none;
+}
 
 .card a {
   color: #8235FF;

@@ -23,7 +23,7 @@ const Header = () => {
             duration={500}
             aria-label="Portfolio - Home"
           >
-            <Logo className={styles.logo} />
+          <Logo className={styles.logo} />
           </ScrollLink>
         </div>
         <nav className={styles.navContainer}>
@@ -44,13 +44,8 @@ const Header = () => {
               </ScrollLink>
             </li>
             <li>
-              <ScrollLink to="experiencia" smooth={true} duration={500}>
-                Experiência
-              </ScrollLink>
-            </li>
-            <li>
-              <ScrollLink to="redes-contato" smooth={true} duration={500}>
-                Redes de Contato
+              <ScrollLink to="conhecimentos" smooth={true}>
+                Conhecimentos
               </ScrollLink>
             </li>
           </ul>
@@ -72,13 +67,8 @@ const Header = () => {
             </ScrollLink>
           </li>
           <li>
-            <ScrollLink to="experiencia" smooth={true} duration={500}>
-              Experiência
-            </ScrollLink>
-          </li>
-          <li>
-            <ScrollLink to="redes-contato" smooth={true} duration={500}>
-              Redes de Contato
+            <ScrollLink to="conhecimentos" smooth={true} duration={500}>
+              Conhecimentos
             </ScrollLink>
           </li>
         </ul>
