@@ -11,23 +11,18 @@
     width: 90%;
     font-size: 20px;
     color: #fff;
-    text-align: left;
     gap: 20px;
-    justify-items: left;
-    overflow: hidden;
     max-width: 65ch;
 }
 
-.apresentText p {
-    text-align: left;
-    color: darkgray;
+.typingWrapper {
     overflow: hidden;
     max-width: 50ch;
 }
 
 .simb {
     position: absolute;
-    right: 0%
+    right: 0%;
 }
 
 .botSob {
@@ -47,13 +42,12 @@
     color: rgb(159, 86, 226);
 }
 
-@media (max-width:1250px) {
+@media (max-width: 1250px) {
     .simb {
         display: none;
     }
 
     .apresent {
-        align-items: center;
         margin-top: 17rem;
         margin-bottom: 6rem;
     }
@@ -63,17 +57,16 @@
         margin: 0 auto;
     }
 
-    .apresentText p {
-        text-align: center;
-        margin: 0 auto;
-    }
-
     .botSob {
         margin: 10px auto 0 auto;
     }
+
+    .typingWrapper {
+        margin: 0 auto;
+    }
 }
 
-@media(max-width:600px) {
+@media (max-width: 600px) {
     .apresent {
         flex-direction: column;
         margin: 13rem auto 6rem auto;
@@ -81,14 +74,13 @@
     }
 
     .apresentText {
-        text-align: center;
         font-size: 15px;
         width: 100%;
         justify-content: center;
     }
 
-    .apresentText p {
-        margin: 0 60px;
+    .typingWrapper {
         font-size: 12px;
+        margin: 0 60px;
     }
 }
