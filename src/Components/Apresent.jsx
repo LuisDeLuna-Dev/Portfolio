@@ -26,7 +26,7 @@ const Apresent = () => {
       <div className="container">
         <div className={styles.apresent}>
           <div className={styles.apresentText}>
-            <h1>
+            <h1 className="animeDown">
               Codificando experiências{" "}
               <span className={styles.neg}>excepcionais </span> para{" "}
               <span className={styles.neg}>cativar</span> e{" "}
@@ -48,13 +48,12 @@ const Apresent = () => {
                 }}
               />
             </div>
-
-            <a className={styles.botSob} href="">
-              Conheça mais sobre mim.
-            </a>
+              <a className={styles.botSob} target="_blank" href="https://www.linkedin.com/in/luisdluna/">
+                Conheça mais sobre mim.
+              </a>
           </div>
 
-          <Simb className={styles.simb} />
+          <Simb className={`${styles.simb} animeLeft`} />
         </div>
       </div>
     </Element>
